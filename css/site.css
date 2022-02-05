@@ -6,7 +6,7 @@
 }
 
 .logoFont {
-    font-family: 'Black Ops One', cursive; /* from Google fonts */
+    font-family: 'Quintessential', cursive; /* from Google fonts */
 }
 
 body {
@@ -14,11 +14,11 @@ body {
 }
 
 nav {
-    background-color: var(--dark-color);
+    background-color: var(--primary-color);
 }
 
 footer {
-    background-color: var(--dark-color);
+    background-color: var(--primary-color);
     padding-right: 1rem
 }
 
@@ -60,7 +60,7 @@ pre[class*="language-"] {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    color: var(--primary-color);
+    color: var(--dark-color);
 }
 
 main>.container {
