@@ -5,6 +5,10 @@
     --white-color: #e7e7e7;
 }
 
+html {
+    font-size: 1rem
+}
+
 .logoFont {
     font-family: 'Quintessential', cursive; /* from Google fonts */
 }
@@ -43,6 +47,10 @@ pre[class*="language-"] {
     word-wrap: break-word;
 }
 
+.bsicon, .jsicon, .html5icon, .cssicon {
+    font-size: 4rem;
+}
+
 .bsicon {
     color: purple
 }
@@ -73,4 +81,73 @@ main>.container {
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+@media only screen and (min-width: 575px){
+    footer {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (min-width: 776px){
+    .bsicon, .jsicon, .html5icon, .cssicon {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (min-width: 991px){
+    footer {
+        font-size: 1rem;
+    }
+
+    .bsicon, .jsicon, .html5icon, .cssicon {
+        font-size: 6rem;
+    }
+}
+
+/*
+  FOR ROTATED MOBILE SCREENS
+*/
+@media only screen and (max-height: 400px){
+    html {
+        font-size: .8rem;
+        text-align: center;
+    }
+    div.container {
+        margin-bottom: 0;
+        padding-bottom: 0
+    }
+    .checklist {
+        display: flex;
+        margin-left: 1.9rem;
+        overflow: none;
+    }
+    .checklist > li {
+        padding: .7em 2.5em .5em 0;
+    }
+    #appBtn {
+        display: flex;
+        justify-content: center;
+        margin: 1em 0 2em;
+    }
+    #appBtn > a {
+        width: 9em;
+        padding: 1rem;
+    }
+    #logoCol {
+        margin-top: 3%
+    }
+    #img-logo {
+        max-width: 50%
+    }
+    #iconRow {
+        display: flex;
+        justify-content: center;
+    }
+    #iconRow > * {
+        max-width: 9em;
+    }
+    .bsicon, .jsicon, .html5icon, .cssicon {
+        font-size: 4rem;
+    }
 }
